@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Lucas WRANKOVICS - Développeur BTS SIO SLAM">
+    <title>Portfolio - Lucas WRANKOVICS | BTS SIO SLAM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navigation">
+        <div class="nav-brand">LW</div>
+        <div class="nav-links">
+            <a href="#accueil" class="nav-link active" data-fr="Accueil" data-en="Home" data-jp="ホーム">Accueil</a>
+            <a href="#parcours" class="nav-link" data-fr="Parcours" data-en="Journey" data-jp="経歴">Parcours</a>
+            <a href="#activites" class="nav-link" data-fr="Activités" data-en="Activities" data-jp="活動">Activités</a>
+            <a href="#competences" class="nav-link" data-fr="Compétences" data-en="Skills" data-jp="スキル">Compétences</a>
+            <a href="#projets" class="nav-link" data-fr="Projets" data-en="Projects" data-jp="プロジェクト">Projets</a>
+            <a href="#veille" class="nav-link" data-fr="Veille Tech" data-en="Tech Watch" data-jp="技術調査">Veille Tech</a>
+            <a href="#projet-pro" class="nav-link" data-fr="Projet Pro" data-en="Career Plan" data-jp="キャリア">Projet Pro</a>
+            <a href="#soft-skills" class="nav-link" data-fr="Soft Skills" data-en="Soft Skills" data-jp="ソフトスキル">Soft Skills</a>
+        </div>
+        <select id="langue" class="lang-selector">
+            <option value="fr">🇫🇷 FR</option>
+            <option value="en">🇬🇧 EN</option>
+            <option value="jp">🇯🇵 JP</option>
+        </select>
+    </nav>
+
+    <!-- PAGE 1: ACCUEIL -->
+    <section id="accueil" class="page-section hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="profile-image-container">
+                <img src="icons/profildecouper.png" alt="Lucas WRANKOVICS" class="profile-image">
+                <div class="profile-ring"></div>
+            </div>
+            <h1 class="hero-title">
+                <span class="firstname">Lucas</span>
+                <span class="lastname">WRANKOVICS</span>
+            </h1>
+            <p class="hero-subtitle" data-fr="Développeur d'Applications & Passionné de Technologie" 
+               data-en="Application Developer & Technology Enthusiast" 
+               data-jp="アプリケーション開発者＆テクノロジー愛好家">
+               Développeur d'Applications & Passionné de Technologie
+            </p>
+            <div class="hero-badge">
+                <span data-fr="BTS SIO - Option SLAM" data-en="BTS SIO - SLAM Option" data-jp="BTS SIO - SLAM専攻">BTS SIO - Option SLAM</span>
+            </div>
+            
+            <div class="contact-links">
+                <a href="mailto:lucaswrnks@gmail.com" class="contact-btn" title="Email">
+                    <img src="icons/icons_email.png" alt="Email">
+                    <span>Email</span>
+                </a>
+                <a href="https://www.linkedin.com/in/lucas-wrankovics-0b7618302" target="_blank" class="contact-btn" title="LinkedIn">
+                    <img src="icons/icons_LinkedIn.png" alt="LinkedIn">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/lucaswrnks" target="_blank" class="contact-btn" title="GitHub">
+                    <img src="icons/icons_github.png" alt="GitHub">
+                    <span>GitHub</span>
+                </a>
+            </div>
+            
+            <a href="#" id="btn-cv" class="btn-cv-download" download>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span data-fr="Télécharger mon CV" data-en="Download my CV" data-jp="履歴書をダウンロード">Télécharger mon CV</span>
+            </a>
+
+            <div class="scroll-indicator">
+                <span data-fr="Découvrir" data-en="Discover" data-jp="発見する">Découvrir</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 2: PARCOURS -->
+    <section id="parcours" class="page-section">
+        <div class="section-header">
+            <h2 data-fr="Mon Parcours" data-en="My Journey" data-jp="私の経歴">Mon Parcours</h2>
+            <p class="section-subtitle" data-fr="Formation & Expériences Professionnelles" 
+               data-en="Education & Professional Experience" 
+               data-jp="教育と職務経験">Formation & Expériences Professionnelles</p>
+        </div>
+        
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-date">Oct 2025 - Présent</div>
+                <div class="timeline-content">
+                    <div class="timeline-icon">💼</div>
+                    <h3 data-fr="Alternance - Capgemini Engineering" data-en="Apprenticeship - Capgemini Engineering" data-jp="インターンシップ - Capgemini Engineering">Alternance - Capgemini Engineering</h3>
+                    <p class="timeline-role" data-fr="Développeur d'Applications" data-en="Application Developer" data-jp="アプリケーション開発者">Développeur d'Applications</p>
+                    <ul class="timeline-list">
+                        <li><strong data-fr="Missions" data-en="Missions" data-jp="ミッション">Missions :</strong> <span data-fr="Maintenance corrective et évolutive d'une application interne dans le domaine aéronautique" data-en="Corrective and evolutionary maintenance of an internal application in the aeronautics field" data-jp="航空分野の内部アプリケーションの修正および進化的保守">Maintenance corrective et évolutive d'une application interne dans le domaine aéronautique</span></li>
+                        <li><strong data-fr="Réalisations" data-en="Achievements" data-jp="実績">Réalisations :</strong> <span data-fr="Analyse des anomalies, déploiement de correctifs, amélioration des performances, ajout de nouvelles fonctionnalités" data-en="Anomaly analysis, patch deployment, performance improvement, new feature addition" data-jp="異常分析、パッチ展開、パフォーマンス向上、新機能追加">Analyse des anomalies, déploiement de correctifs, amélioration des performances, ajout de nouvelles fonctionnalités</span></li>
+                        <li><strong data-fr="Méthodologie :" data-en="Methodology:" data-jp="方法論 :">Méthodologie :</strong> <span data-fr="Agile, Tests et validation, Rédaction de documentation technique, Suivi des versions" data-en="Agile, Testing and validation, Technical documentation writing, Version control" data-jp="アジャイル、テストと検証、技術ドキュメント作成、バージョン管理">Agile, Tests et validation, Rédaction de documentation technique, Suivi des versions</span></li>                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-date">Mai - Août 2025</div>
+                <div class="timeline-content">
+                    <div class="timeline-icon">🖥️</div>
+                    <h3 data-fr="Stage IT - Capgemini" data-en="IT Internship - Capgemini" data-jp="ITインターンシップ - Capgemini">Stage IT - Capgemini</h3>
+                    <p class="timeline-role" data-fr="Stagiaire Systèmes, Réseaux & Développement" data-en="Systems, Networks & Development Intern" data-jp="システム、ネットワーク、開発インターン">Stagiaire Systèmes, Réseaux & Développement</p>
+                    <ul class="timeline-list">
+                        <li><span data-fr="Administration système sur CentOS 6.3" data-en="System administration on CentOS 6.3" data-jp="CentOS 6.3でのシステム管理">Administration système sur CentOS 6.3</span></li>
+                        <li><span data-fr="Gestion réseau et automatisation des tâches" data-en="Network management and task automation" data-jp="ネットワーク管理とタスク自動化">Gestion réseau et automatisation des tâches</span></li>
+                        <li><span data-fr="Participation à la recette de logiciels : rédaction et exécution de fiches de test" data-en="Software acceptance testing: writing and executing test cases" data-jp="ソフトウェア受け入れテスト：テストケースの作成と実行">Participation à la recette de logiciels : rédaction et exécution de fiches de test</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-date">2024 - 2026</div>
+                <div class="timeline-content">
+                    <div class="timeline-icon">📚</div>
+                    <h3 data-fr="BTS SIO Option SLAM" data-en="BTS SIO - SLAM Option" data-jp="BTS SIO - SLAM専攻">BTS SIO Option SLAM</h3>
+                    <p class="timeline-role" data-fr="Cours Diderot, Toulouse" data-en="Cours Diderot, Toulouse" data-jp="Cours Diderot、トゥールーズ">Cours Diderot, Toulouse</p>
+                    <ul class="timeline-list">
+                        <li><span data-fr="Solutions Logicielles et Applications Métiers" data-en="Software Solutions and Business Applications" data-jp="ソフトウェアソリューションとビジネスアプリケーション">Solutions Logicielles et Applications Métiers</span></li>
+                        <li><span data-fr="Développement web, mobile et desktop" data-en="Web, mobile and desktop development" data-jp="Web、モバイル、デスクトップ開発">Développement web, mobile et desktop</span></li>
+                        <li><span data-fr="Gestion de bases de données et cybersécurité" data-en="Database management and cybersecurity" data-jp="データベース管理とサイバーセキュリティ">Gestion de bases de données et cybersécurité</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-date">Sept 2023 - Juil 2024</div>
+                <div class="timeline-content">
+                    <div class="timeline-icon">🌏</div>
+                    <h3 data-fr="Année en Australie" data-en="Year in Australia" data-jp="オーストラリアでの1年">Année en Australie</h3>
+                    <p class="timeline-role" data-fr="Sydney, Coffs Harbour, Woolgoolga, Young, Casino" data-en="Sydney, Coffs Harbour, Woolgoolga, Young, Casino" data-jp="シドニー、コフスハーバー、ウールグールガ、ヤング、カジノ">Sydney, Coffs Harbour, Woolgoolga, Young, Casino</p>
+                    <ul class="timeline-list">
+                        <li><span data-fr="Immersion linguistique complète en anglais" data-en="Complete English language immersion" data-jp="完全な英語での没入">Immersion linguistique complète en anglais</span></li>
+                        <li><span data-fr="Récolte, tri et conditionnement de fruits variés" data-en="Harvesting, sorting and packaging various fruits" data-jp="さまざまな果物の収穫、仕分け、梱包">Récolte, tri et conditionnement de fruits variés</span></li>
+                        <li><span data-fr="Travail en usine (CO-OP Meat Factory)" data-en="Factory work (CO-OP Meat Factory)" data-jp="工場勤務（CO-OP Meat Factory）">Travail en usine (CO-OP Meat Factory)</span></li>
+                        <li><span data-fr="Accompagnement des nouveaux arrivants francophones" data-en="Support for new French-speaking arrivals" data-jp="新しいフランス語話者の支援">Accompagnement des nouveaux arrivants francophones</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-date">Fév - Juil 2022</div>
+                <div class="timeline-content">
+                    <div class="timeline-icon">🚒</div>
+                    <h3 data-fr="Marin-Pompier de Marseille" data-en="Navy Firefighter Marseille" data-jp="マルセイユ海軍消防士">Marin-Pompier de Marseille</h3>
+                    <p class="timeline-role" data-fr="EMPM, Marseille" data-en="EMPM, Marseille" data-jp="EMPM、マルセイユ">EMPM, Marseille</p>
+                    <ul class="timeline-list">
+                        <li><span data-fr="Formation militaire et pompier" data-en="Military and firefighter training" data-jp="軍事および消防訓練">Formation militaire et pompier</span></li>
+                        <li><span data-fr="Rigueur, discipline et esprit d'équipe" data-en="Rigor, discipline and team spirit" data-jp="厳格さ、規律、チームスピリット">Rigueur, discipline et esprit d'équipe</span></li>
+                        <li><span data-fr="Gestion du stress et des situations d'urgence" data-en="Stress and emergency situation management" data-jp="ストレスと緊急事態の管理">Gestion du stress et des situations d'urgence</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-date">2016 - 2020</div>
+                <div class="timeline-content">
+                    <div class="timeline-icon">🎓</div>
+                    <h3 data-fr="Baccalauréat Scientifique" data-en="Scientific Baccalaureate" data-jp="科学バカロレア">Baccalauréat Scientifique</h3>
+                    <p class="timeline-role" data-fr="Lycée Joliot Curie, Aubagne" data-en="Joliot Curie High School, Aubagne" data-jp="ジョリオ・キュリー高校、オーバーニュ">Lycée Joliot Curie, Aubagne</p>
+                    <ul class="timeline-list">
+                        <li><span data-fr="Formation scientifique générale" data-en="General scientific education" data-jp="一般的な科学教育">Formation scientifique générale</span></li>
+                        <li><span data-fr="Développement de la rigueur et de la méthodologie" data-en="Development of rigor and methodology" data-jp="厳格さと方法論の発展">Développement de la rigueur et de la méthodologie</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 3: ACTIVITÉS PERSONNELLES -->
+    <section id="activites" class="page-section bg-alt">
+        <div class="section-header">
+            <h2 data-fr="Activités Personnelles" data-en="Personal Activities" data-jp="個人活動">Activités Personnelles</h2>
+            <p class="section-subtitle" data-fr="Sport & Passions" data-en="Sports & Passions" data-jp="スポーツと情熱">Sport & Passions</p>
+        </div>
+
+        <div class="activities-grid">
+            <div class="activity-card" data-aos="zoom-in">
+                <div class="activity-icon">🥋</div>
+                <h3 data-fr="Judo" data-en="Judo" data-jp="柔道">Judo</h3>
+                <p class="activity-role" data-fr="Pratique régulière" data-en="Regular practice" data-jp="定期的な練習">Pratique régulière</p>
+                <p data-fr="Art martial japonais développant discipline, respect et maîtrise de soi. Entraînement physique et mental complet." 
+                   data-en="Japanese martial art developing discipline, respect and self-control. Complete physical and mental training." 
+                   data-jp="規律、尊敬、自己制御を発展させる日本の武道。完全な身体的および精神的トレーニング。">
+                   Art martial japonais développant discipline, respect et maîtrise de soi. Entraînement physique et mental complet.
+                </p>
+            </div>
+
+            <div class="activity-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="activity-icon">🥊</div>
+                <h3 data-fr="MMA" data-en="MMA" data-jp="総合格闘技">MMA</h3>
+                <p class="activity-role" data-fr="Arts Martiaux Mixtes" data-en="Mixed Martial Arts" data-jp="総合格闘技">Arts Martiaux Mixtes</p>
+                <p data-fr="Sport de combat complet combinant différentes techniques. Développement de l'endurance, de la force et de la stratégie." 
+                   data-en="Complete combat sport combining different techniques. Development of endurance, strength and strategy." 
+                   data-jp="さまざまな技術を組み合わせた総合格闘技。持久力、力、戦略の発展。">
+                   Sport de combat complet combinant différentes techniques. Développement de l'endurance, de la force et de la stratégie.
+                </p>
+            </div>
+
+            <div class="activity-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="activity-icon">🏒</div>
+                <h3 data-fr="Roller Hockey" data-en="Roller Hockey" data-jp="ローラーホッケー">Roller Hockey</h3>
+                <p class="activity-role" data-fr="Sport d'équipe" data-en="Team sport" data-jp="チームスポーツ">Sport d'équipe</p>
+                <p data-fr="Sport collectif dynamique alliant vitesse et coordination. Esprit d'équipe, réactivité et stratégie de jeu." 
+                   data-en="Dynamic team sport combining speed and coordination. Team spirit, reactivity and game strategy." 
+                   data-jp="スピードと調整を組み合わせたダイナミックなチームスポーツ。チームスピリット、反応性、ゲーム戦略。">
+                   Sport collectif dynamique alliant vitesse et coordination. Esprit d'équipe, réactivité et stratégie de jeu.
+                </p>
+            </div>
+
+            <div class="activity-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="activity-icon">🏊</div>
+                <h3 data-fr="Natation" data-en="Swimming" data-jp="水泳">Natation</h3>
+                <p class="activity-role" data-fr="Entraînement cardio" data-en="Cardio training" data-jp="有酸素運動">Entraînement cardio</p>
+                <p data-fr="Sport complet excellent pour le cardio et l'endurance. Pratique régulière pour maintenir une bonne condition physique." 
+                   data-en="Complete sport excellent for cardio and endurance. Regular practice to maintain good physical condition." 
+                   data-jp="心肺機能と持久力に優れた完全なスポーツ。良好な身体状態を維持するための定期的な練習。">
+                   Sport complet excellent pour le cardio et l'endurance. Pratique régulière pour maintenir une bonne condition physique.
+                </p>
+            </div>
+
+            <div class="activity-card" data-aos="zoom-in" data-aos-delay="400">
+                <div class="activity-icon">🏃</div>
+                <h3 data-fr="Course à Pied" data-en="Running" data-jp="ランニング">Course à Pied</h3>
+                <p class="activity-role" data-fr="Running régulier" data-en="Regular running" data-jp="定期的なランニング">Running régulier</p>
+                <p data-fr="Activité d'endurance permettant de se ressourcer et de maintenir une excellente forme physique. Dépassement de soi." 
+                   data-en="Endurance activity for rejuvenation and maintaining excellent physical fitness. Self-improvement." 
+                   data-jp="リフレッシュと優れた身体的フィットネスを維持するための持久力活動。自己改善。">
+                   Activité d'endurance permettant de se ressourcer et de maintenir une excellente forme physique. Dépassement de soi.
+                </p>
+            </div>
+
+            <div class="activity-card" data-aos="zoom-in" data-aos-delay="500">
+                <div class="activity-icon">💪</div>
+                <h3 data-fr="CrossFit" data-en="CrossFit" data-jp="クロスフィット">CrossFit</h3>
+                <p class="activity-role" data-fr="Entraînement fonctionnel" data-en="Functional training" data-jp="機能的トレーニング">Entraînement fonctionnel</p>
+                <p data-fr="Programme d'entraînement intense et varié. Développement de la force, l'agilité et l'endurance. Esprit de communauté fort." 
+                   data-en="Intense and varied training program. Development of strength, agility and endurance. Strong community spirit." 
+                   data-jp="激しく多様なトレーニングプログラム。力、敏捷性、持久力の発展。強いコミュニティスピリット。">
+                   Programme d'entraînement intense et varié. Développement de la force, l'agilité et l'endurance. Esprit de communauté fort.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 4: COMPÉTENCES -->
+    <section id="competences" class="page-section">
+        <div class="section-header">
+            <h2 data-fr="Compétences Techniques" data-en="Technical Skills" data-jp="技術スキル">Compétences Techniques</h2>
+            <p class="section-subtitle" data-fr="Expertises par bloc BTS SIO" data-en="Expertise by BTS SIO Block" data-jp="BTS SIOブロック別の専門知識">Expertises par bloc BTS SIO</p>
+        </div>
+
+        <div class="competences-blocs">
+            <div class="bloc-competence bloc-1" data-aos="fade-up">
+                <div class="bloc-header">
+                    <div class="bloc-number">01</div>
+                    <h3 data-fr="Support et Mise à Disposition de Services Informatiques" 
+                        data-en="IT Support and Service Provision" 
+                        data-jp="ITサポートとサービス提供">
+                        Support et Mise à Disposition de Services Informatiques
+                    </h3>
+                </div>
+                <div class="bloc-content">
+                    <div class="competence-category">
+                        <h4 data-fr="Administration Système" data-en="System Administration" data-jp="システム管理">Administration Système</h4>
+                        <ul>
+                            <li data-fr="Administration Linux (Debian, Ubuntu, CentOS)" data-en="Linux administration (Debian, Ubuntu, CentOS)" data-jp="Linux管理（Debian、Ubuntu、CentOS）">Administration Linux (Debian, Ubuntu, CentOS)</li>
+                            <li data-fr="Windows Server et Active Directory" data-en="Windows Server and Active Directory" data-jp="Windows ServerとActive Directory">Windows Server et Active Directory</li>
+                            <li data-fr="Gestion de parc informatique avec GLPI" data-en="IT asset management with GLPI" data-jp="GLPIを使用したIT資産管理">Gestion de parc informatique avec GLPI</li>
+                        </ul>
+                    </div>
+                    <div class="competence-category">
+                        <h4 data-fr="Réseau & Infrastructure" data-en="Network & Infrastructure" data-jp="ネットワークとインフラストラクチャ">Réseau & Infrastructure</h4>
+                        <ul>
+                            <li data-fr="Configuration et gestion réseau" data-en="Network configuration and management" data-jp="ネットワーク構成と管理">Configuration et gestion réseau</li>
+                            <li data-fr="Automatisation des tâches système" data-en="System task automation" data-jp="システムタスクの自動化">Automatisation des tâches système</li>
+                        </ul>
+                    </div>
+                    <div class="tools-list">
+                        <span class="tool-tag">Linux</span>
+                        <span class="tool-tag">Windows Server</span>
+                        <span class="tool-tag">Active Directory</span>
+                        <span class="tool-tag">GLPI</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bloc-competence bloc-2 highlighted" data-aos="fade-up" data-aos-delay="100">
+                <div class="bloc-header">
+                    <div class="bloc-number">02</div>
+                    <h3 data-fr="Conception et Développement d'Applications (SLAM)" 
+                        data-en="Application Design and Development (SLAM)" 
+                        data-jp="アプリケーション設計と開発（SLAM）">
+                        Conception et Développement d'Applications (SLAM)
+                    </h3>
+                </div>
+                <div class="bloc-content">
+                    <div class="competence-category">
+                        <h4 data-fr="Langages de Programmation" data-en="Programming Languages" data-jp="プログラミング言語">Langages de Programmation</h4>
+                        <div class="skills-bars">
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>Python</span>
+                                    <span class="skill-level" data-fr="Intermédiaire" data-en="Intermediate" data-jp="中級">Intermédiaire</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>Java</span>
+                                    <span class="skill-level" data-fr="Intermédiaire" data-en="Intermediate" data-jp="中級">Intermédiaire</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>HTML5 / CSS3</span>
+                                    <span class="skill-level" data-fr="Intermédiaire" data-en="Intermediate" data-jp="中級">Intermédiaire</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>JavaScript</span>
+                                    <span class="skill-level" data-fr="Débutant" data-en="Beginner" data-jp="初級">Débutant</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" style="width: 45%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>PHP</span>
+                                    <span class="skill-level" data-fr="Débutant" data-en="Beginner" data-jp="初級">Débutant</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" style="width: 40%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>SQL</span>
+                                    <span class="skill-level" data-fr="Débutant" data-en="Beginner" data-jp="初級">Débutant</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="competence-category">
+                        <h4 data-fr="Frameworks & Technologies" data-en="Frameworks & Technologies" data-jp="フレームワークとテクノロジー">Frameworks & Technologies</h4>
+                        <ul>
+                            <li>.NET Framework</li>
+                            <li>React (JavaScript)</li>
+                        </ul>
+                    </div>
+                    <div class="competence-category">
+                        <h4 data-fr="Bases de Données" data-en="Databases" data-jp="データベース">Bases de Données</h4>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>PostgreSQL</li>
+                            <li>MongoDB</li>
+                            <li>SQL Server</li>
+                            <li>Azure SQL</li>
+                        </ul>
+                    </div>
+                    <div class="tools-list">
+                        <span class="tool-tag gold">Visual Studio</span>
+                        <span class="tool-tag gold">IntelliJ IDEA</span>
+                        <span class="tool-tag gold">VS Code</span>
+                        <span class="tool-tag gold">Git / GitHub / GitLab</span>
+                        <span class="tool-tag gold">Docker</span>
+                        <span class="tool-tag gold">Postman</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bloc-competence bloc-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="bloc-header">
+                    <div class="bloc-number">03</div>
+                    <h3 data-fr="Cybersécurité des Services Informatiques" 
+                        data-en="IT Services Cybersecurity" 
+                        data-jp="ITサービスのサイバーセキュリティ">
+                        Cybersécurité des Services Informatiques
+                    </h3>
+                </div>
+                <div class="bloc-content">
+                    <div class="competence-category">
+                        <h4 data-fr="Analyse & Sécurité Réseau" data-en="Network Analysis & Security" data-jp="ネットワーク分析とセキュリティ">Analyse & Sécurité Réseau</h4>
+                        <ul>
+                            <li data-fr="Analyse de trafic réseau avec Wireshark" data-en="Network traffic analysis with Wireshark" data-jp="Wiresharkを使用したネットワークトラフィック分析">Analyse de trafic réseau avec Wireshark</li>
+                            <li data-fr="Scan et détection avec Nmap" data-en="Scanning and detection with Nmap" data-jp="Nmapを使用したスキャンと検出">Scan et détection avec Nmap</li>
+                            <li data-fr="Connaissance des vulnérabilités OWASP" data-en="Knowledge of OWASP vulnerabilities" data-jp="OWASP脆弱性の知識">Connaissance des vulnérabilités OWASP</li>
+                        </ul>
+                    </div>
+                    <div class="competence-category">
+                        <h4 data-fr="Bonnes Pratiques" data-en="Best Practices" data-jp="ベストプラクティス">Bonnes Pratiques</h4>
+                        <ul>
+                            <li data-fr="Sécurisation des applications web" data-en="Web application security" data-jp="Webアプリケーションのセキュリティ">Sécurisation des applications web</li>
+                            <li data-fr="Gestion sécurisée des données" data-en="Secure data management" data-jp="セキュアなデータ管理">Gestion sécurisée des données</li>
+                        </ul>
+                    </div>
+                    <div class="tools-list">
+                        <span class="tool-tag">Wireshark</span>
+                        <span class="tool-tag">Nmap</span>
+                        <span class="tool-tag">OWASP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 5: PROJETS -->
+    <section id="projets" class="page-section bg-alt">
+        <div class="section-header">
+            <h2 data-fr="Projets Réalisés" data-en="Completed Projects" data-jp="完成したプロジェクト">Projets Réalisés</h2>
+            <p class="section-subtitle" data-fr="Portfolio de développement" data-en="Development Portfolio" data-jp="開発ポートフォリオ">Portfolio de développement</p>
+        </div>
+
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all" data-fr="Tous" data-en="All" data-jp="すべて">Tous</button>
+            <button class="filter-btn" data-filter="alternance" data-fr="Alternance" data-en="Apprenticeship" data-jp="インターンシップ">Alternance</button>
+            <button class="filter-btn" data-filter="formation" data-fr="Formation" data-en="Training" data-jp="トレーニング">Formation</button>
+            <button class="filter-btn" data-filter="perso" data-fr="Personnel" data-en="Personal" data-jp="個人">Personnel</button>
+        </div>
+
+        <div class="projects-grid">
+    <div class="project-card" data-category="alternance" data-aos="fade-up">
+        <div class="project-image">
+            <div class="project-overlay">
+                <span class="project-tag" data-fr="Alternance" data-en="Apprenticeship" data-jp="インターンシップ">Alternance</span>
+            </div>
+        </div>
+        <div class="project-content">
+            <h3 data-fr="Application Aéronautique Interne" data-en="Internal Aeronautics Application" data-jp="内部航空アプリケーション">Application Aéronautique Interne</h3>
+            <div class="project-meta">
+                <span class="meta-item">📅 Oct 2025 - Présent</span>
+                <span class="meta-item">🏢 Capgemini Engineering</span>
+            </div>
+            <p data-fr="Maintenance et évolution d'une application critique utilisée dans le domaine aéronautique.">
+                Maintenance et évolution d'une application critique utilisée dans le domaine aéronautique.
+            </p>
+            <div class="project-tech">
+                <span class="tech-badge">.NET</span>
+                <span class="tech-badge">SQL Server</span>
+                <span class="tech-badge">Git</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card" data-category="alternance" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-image">
+            <div class="project-overlay">
+                <span class="project-tag" data-fr="Stage" data-en="Internship" data-jp="インターンシップ">Stage</span>
+            </div>
+        </div>
+        <div class="project-content">
+            <h3 data-fr="Automatisation Système CentOS" data-en="CentOS System Automation" data-jp="CentOSシステム自動化">Automatisation Système CentOS</h3>
+            <div class="project-meta">
+                <span class="meta-item">📅 Mai - Août 2025</span>
+                <span class="meta-item">🏢 Capgemini</span>
+            </div>
+            <p data-fr="Projet d'automatisation de tâches système sur CentOS 6.3. Configuration réseau et scripts Bash.">
+                Projet d'automatisation de tâches système sur CentOS 6.3. Configuration réseau et scripts Bash.
+            </p>
+            <div class="project-tech">
+                <span class="tech-badge">CentOS</span>
+                <span class="tech-badge">Bash</span>
+                <span class="tech-badge">Python</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card" data-category="formation" data-aos="fade-up" data-aos-delay="200">
+    <div class="project-image">
+        <div class="project-overlay">
+            <span class="project-tag" 
+                  data-fr="Conception et Développement" 
+                  data-en="Software Design & Dev" 
+                  data-jp="設計と開発">
+                  Conception et Développement
+            </span>
+        </div>
+    </div>
+    <div class="project-content">
+        <h3 data-fr="Conception Logicielle & POO Java" data-en="Software Design & Java OOP" data-jp="ソフトウェア設計とJava POO">Conception Logicielle & POO Java</h3>
+        <div class="project-meta">
+            <span class="meta-item">📅 2024 - 2026</span>
+            <span class="meta-item">🎓 BTS SIO</span>
+        </div>
+        
+        
+
+        <p data-fr="Développement de modules techniques visant à maîtriser l'architecture logicielle Java et les principes de la Programmation Orientée Objet (POO).">
+            Développement de modules techniques visant à maîtriser l'architecture logicielle Java et les principes de la Programmation Orientée Objet (POO).
+        </p>
+        <div class="project-tech">
+            <span class="tech-badge">Java 17</span>
+            <span class="tech-badge">POO</span>
+            <span class="tech-badge">JUnit</span>
+            <span class="tech-badge">Design Patterns</span>
+        </div>
+        <div class="project-results">
+            <h4 data-fr="Compétences" data-en="Skills" data-jp="スキル">Compétences :</h4>
+            <ul>
+                <li data-fr="Modélisation de classes et objets" data-en="Class and object modeling">Modélisation de classes et objets</li>
+                <li data-fr="Mise en œuvre de l'héritage et du polymorphisme" data-en="Implementation of inheritance and polymorphism">Mise en œuvre de l'héritage et du polymorphisme</li>
+                <li data-fr="Tests unitaires pour la validation logicielle" data-en="Unit testing for software validation">Tests unitaires pour la validation logicielle</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="project-card" data-category="formation" data-aos="fade-up" data-aos-delay="300">
+    <div class="project-image">
+        <div class="project-overlay">
+            <span class="project-tag" 
+                  data-fr="Support et Services" 
+                  data-en="IT Services & Support" 
+                  data-jp="ITサービスとサポート">
+                  Support et Services
+            </span>
+        </div>
+    </div>
+    <div class="project-content">
+        <h3 data-fr="Gestion de Parc & Inventaire (OCS/GLPI)" data-en="Asset Management (OCS/GLPI)" data-jp="資産管理 (OCS/GLPI)">Gestion de Parc & Inventaire (OCS/GLPI)</h3>
+        <div class="project-meta">
+            <span class="meta-item">📅 Décembre 2025</span>
+            <span class="meta-item">🎓 BTS SIO</span>
+        </div>
+        <p data-fr="Mise en place d'une infrastructure complète de gestion de parc informatique sous Debian 12 (OCS Inventory & GLPI)." 
+           data-en="Implementation of a complete IT asset management infrastructure on Debian 12 (OCS Inventory & GLPI)." 
+           data-jp="Debian 12（OCS Inventory＆GLPI）上での完全なIT資産管理インフラの実装。">
+            Mise en place d'une infrastructure complète de gestion de parc informatique sous Debian 12 (OCS Inventory & GLPI).
+        </p>
+
+        <div class="project-tech">
+            <span class="tech-badge">Debian 12</span>
+            <span class="tech-badge">SISR</span>
+            <span class="tech-badge">GLPI</span>
+            <span class="tech-badge">Helpdesk</span>
+        </div>
+        <div class="project-results">
+            <h4 data-fr="Missions de support" data-en="Support Missions" data-jp="サポートミッション">Missions de support :</h4>
+            <ul>
+                <li data-fr="Installation et configuration du serveur d'inventaire" data-en="Installation and configuration of the inventory server">Installation et configuration du serveur d'inventaire</li>
+                <li data-fr="Déploiement d'agents de remontée automatique" data-en="Deployment of automatic reporting agents">Déploiement d'agents de remontée automatique</li>
+                <li data-fr="Gestion du cycle de vie du matériel et ticketing" data-en="Asset lifecycle management and ticketing">Gestion du cycle de vie du matériel et ticketing</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="project-card" data-category="formation" data-aos="fade-up" data-aos-delay="400">
+    <div class="project-image">
+        <div class="project-overlay">
+            <span class="project-tag" data-fr="Cybersécurité" data-en="Cybersecurity" data-jp="サイバーセキュリティ">Cybersécurité</span>
+        </div>
+    </div>
+    <div class="project-content">
+        <h3 data-fr="Protection contre les failles CSRF" data-en="CSRF Vulnerability Protection" data-jp="CSRF脆弱性保護">Protection contre les failles CSRF</h3>
+        <div class="project-meta">
+            <span class="meta-item">📅 Octobre 2025</span>
+            <span class="meta-item">🎓 Cours Diderot - Bloc 3</span>
+        </div>
+        <p data-fr="Simulation d'attaque Cross-Site Request Forgery (CSRF) sur un site vulnérable et mise en place d'une sécurisation par jetons (tokens) uniques et gestion de sessions PHP." 
+           data-en="Simulation of a Cross-Site Request Forgery (CSRF) attack on a vulnerable site and implementation of security using unique tokens and PHP session management." 
+           data-jp="脆弱なサイトに対するCSRF攻撃のシミュレーションと、一意のトークンとPHPセッション管理を使用したセキュリティの実装。">
+            Simulation d'attaque Cross-Site Request Forgery (CSRF) sur un site vulnérable et mise en place d'une sécurisation par jetons (tokens) uniques et gestion de sessions PHP.
+        </p>
+        <div class="project-tech">
+            <span class="tech-badge">PHP 8</span>
+            <span class="tech-badge">Cybersecurity</span>
+            <span class="tech-badge">XAMPP</span>
+            <span class="tech-badge">Sessions</span>
+        </div>
+        <div class="project-results">
+            <h4 data-fr="Compétences validées" data-en="Validated Skills" data-jp="検証済みのスキル">Compétences validées :</h4>
+            <ul>
+                <li data-fr="Analyse : Compréhension de l'exploitation des sessions ouvertes" data-en="Analysis: Understanding open session exploitation">Analyse : Compréhension de l'exploitation des sessions ouvertes</li>
+                <li data-fr="Développement : Génération de jetons cryptographiques via bin2hex & random_bytes" data-en="Development: Cryptographic token generation via bin2hex & random_bytes">Développement : Génération de jetons cryptographiques via bin2hex & random_bytes</li>
+                <li data-fr="Sécurité : Vérification et comparaison de tokens côté serveur" data-en="Security: Server-side token verification and comparison">Sécurité : Vérification et comparaison de tokens côté serveur</li>
+            </ul>
+        </div>
+        <div class="project-links">
+            <a href="#" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <span data-fr="Compte-rendu TP" data-en="Lab Report" data-jp="実習レポート">Compte-rendu TP</span>
+            </a>
+        </div>
+    </div>
+</div>
+</div> 
+ 
+<!-- PAGE 6: VEILLE TEHCNOLOGIQUE -->
+
+ <section id="veille" class="page-section">
+    <div class="section-header">
+        <h2 data-fr="Veille Technologique" data-en="Technology Watch" data-jp="技術調査">Veille Technologique</h2>
+        <p class="section-subtitle" data-fr="L'IA au cœur du développement : productivité et intégration" data-en="AI at the heart of development: productivity and integration" data-jp="開発の中心にあるAI：生産性と統合">L'IA au cœur du développement : productivité et intégration</p>
+    </div>
+
+    <div class="veille-container">
+        <div class="veille-main" data-aos="fade-right">
+            <div class="veille-focus">
+                <div style="font-size: 3rem; margin-bottom: 20px;">🤖</div>
+                <h3 data-fr="Sujet : L'impact des LLM sur le quotidien du développeur" 
+                    data-en="Subject: The impact of LLMs on the developer's daily life" 
+                    data-jp="トピック：LLMが開発者の日常に与える影響">
+                    Sujet : L'impact des LLM sur le quotidien du développeur
+                </h3>
+                <p data-fr="Ma veille porte sur l'évolution des outils d'assistance au code et l'intégration de l'IA via API. J'étudie comment transformer ces technologies en leviers de productivité (automatisation des tests, aide au débogage) tout en maîtrisant les enjeux de sécurité et de fiabilité (évitement des hallucinations de l'IA)." 
+                   data-en="My watch focuses on the evolution of code assistance tools and AI integration via API. I study how to transform these technologies into productivity levers (test automation, debugging help) while mastering security and reliability issues." 
+                   data-jp="私の調査は、コード支援ツールの進化とAPIを介したAI統合に焦点を当てています。セキュリティと信頼性の課題（AIのハルシネーションの回避）をマスターしながら、これらのテクノロジーを生産性向上の手段（テストの自動化、デバッグ支援）に変える方法を研究しています。">
+                    Ma veille porte sur l'évolution des outils d'assistance au code et l'intégration de l'IA via API. J'étudie comment transformer ces technologies en leviers de productivité tout en maîtrisant les enjeux de sécurité et de fiabilité.
+                </p>
+            </div>
+
+           <div class="veille-sources">
+                <h4 data-fr="Ma Stratégie d'Information" data-en="My Information Strategy" data-jp="私の情報戦略">Ma Stratégie d'Information</h4>
+                <div class="sources-grid">
+                    <div class="source-item">
+                        <div class="source-icon">📱</div>
+                        <h5 data-fr="Réseaux & Communautés" data-en="Networks & Communities" data-jp="ネットワークとコミュニティ">Réseaux & Communautés</h5>
+                        <ul>
+                            <li>LinkedIn (Retours d'expérience pro)</li>
+                            <li>Instagram (Vulgarisation & Actu Tech)</li>
+                            <li>Reddit (r/programming / r/webdev)</li>
+                            <li>Stack Overflow (Solutions techniques)</li>
+                        </ul>
+                    </div>
+                    <div class="source-item">
+                        <div class="source-icon">🛠️</div>
+                        <h5 data-fr="Outils & Pratique" data-en="Tools & Practice" data-jp="ツールと実践">Outils & Pratique</h5>
+                        <ul>
+                            <li>Mises à jour IDE (Nouveautés Copilot)</li>
+                            <li>YouTube (Benjamin Code / Fireship)</li>
+                            <li>Notion (Centralisation des notes)</li>
+                            <li>Newsletters (TLDR Tech)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="veille-articles" data-aos="fade-left">
+            <h4 data-fr="Analyses & Cas d'Usage" data-en="Analyses & Use Cases" data-jp="分析とユースケース">Analyses & Cas d'Usage</h4>
+            
+            <div class="article-card">
+                <div class="article-date">Janvier 2026</div>
+                <h5 data-fr="IDE Natifs IA : L'évolution de l'assistance au code" 
+                    data-en="AI-Native IDEs: The evolution of code assistance" 
+                    data-jp="AIネイティブIDE：コード支援の進化">
+                    IDE Natifs IA : L'évolution de l'assistance au code
+                </h5>
+                <p data-fr="Analyse de l'outil Cursor : contrairement aux extensions classiques, il indexe l'intégralité du projet local. Cela permet à l'IA de comprendre les liens entre mes fichiers pour proposer un refactoring cohérent et des tests unitaires pertinents." 
+                   data-en="Analysis of the Cursor tool: unlike classic extensions, it indexes the entire local project. This allows the AI to understand the links between my files to propose coherent refactoring and relevant unit tests." 
+                   data-jp="Cursorツールの分析：従来の拡張機能とは異なり、ローカルプロジェクト全体をインデックス化します。これにより、AIがファイル間のリンクを理解し、一貫したリファクタリングと適切なユニットテストを提案できるようになります。">
+                    Analyse de l'outil Cursor : il indexe l'intégralité du projet pour comprendre les liens entre mes fichiers, facilitant ainsi le refactoring et la création de tests unitaires.
+                </p>
+                <div class="article-tags">
+                    <span class="article-tag">Workflow</span>
+                    <span class="article-tag">Productivité</span>
+                </div>
+                <p style="margin-top: 15px; font-size: 0.9rem; color: var(--brown); opacity: 0.8;">
+                    <strong data-fr="Mon avis :" data-en="My opinion:">Mon avis :</strong>
+                    <span data-fr="L'IA améliore ma DX (Developer Experience) en gérant les tâches répétitives, me permettant de me concentrer sur la logique métier.">L'IA améliore ma DX (Developer Experience) en gérant les tâches répétitives.</span>
+                </p>
+            </div>
+
+            <div class="article-card">
+                <div class="article-date">Décembre 2025</div>
+                <h5 data-fr="Fiabiliser l'IA : Le concept de RAG" 
+                    data-en="Reliable AI: The RAG concept" 
+                    data-jp="信頼性の高いAI：RAGの概念">
+                    Fiabiliser l'IA : Le concept de RAG
+                </h5>
+                <p data-fr="Étude du Retrieval-Augmented Generation. Cette technique permet de connecter une API LLM à des données privées (fichiers, bases de données) pour obtenir des réponses précises sans que l'IA n'ait besoin d'être ré-entraînée." 
+                   data-en="Study of Retrieval-Augmented Generation. This technique allows connecting an LLM API to private data (files, databases) to obtain precise answers without needing to retrain the AI." 
+                   data-jp="RAG（検索拡張生成）の研究。この手法により、AIを再学習させることなく、LLM APIをプライベートデータに接続して正確な回答を得ることが可能になります。">
+                    Le RAG permet de connecter une IA à des données privées (fichiers, bases de données) pour obtenir des réponses précises et fiables sans erreurs.
+                </p>
+                <div class="article-tags">
+                    <span class="article-tag">API Integration</span>
+                    <span class="article-tag">Sécurité</span>
+                </div>
+                <p style="margin-top: 15px; font-size: 0.9rem; color: var(--brown); opacity: 0.8;">
+                    <strong data-fr="Mon avis :" data-en="My opinion:">Mon avis :</strong>
+                    <span data-fr="C'est une compétence clé pour un dev : savoir créer des applications intelligentes qui respectent la confidentialité des données.">Savoir créer des applications intelligentes qui respectent la confidentialité des données est une compétence clé.</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="veille-methodology" data-aos="fade-up">
+            <h4 data-fr="Méthodologie de Veille" data-en="Monitoring Methodology" data-jp="調査方法">Méthodologie de Veille</h4>
+            <div class="methodology-steps">
+                <div class="method-step">
+                    <div class="step-number">1</div>
+                    <h5 data-fr="Collecte" data-en="Collection" data-jp="収集">Collecte</h5>
+                    <p data-fr="Consultation des flux LinkedIn et Instagram, et réception de la newsletter TLDR Tech." data-en="Checking LinkedIn and Instagram feeds, and receiving the TLDR Tech newsletter.">Consultation des réseaux sociaux (LinkedIn, Instagram) et newsletters.</p>
+                </div>
+                <div class="method-step">
+                    <div class="step-number">2</div>
+                    <h5 data-fr="Pratique" data-en="Practice" data-jp="実践">Pratique</h5>
+                    <p data-fr="Utilisation quotidienne de Copilot et test des nouvelles fonctionnalités intégrées dans l'IDE." data-en="Daily use of Copilot and testing new features integrated in the IDE.">Utilisation de Copilot et test des nouveautés dans mon éditeur de code.</p>
+                </div>
+                <div class="method-step">
+                    <div class="step-number">3</div>
+                    <h5 data-fr="Synthèse" data-en="Synthesis" data-jp="統合">Synthèse</h5>
+                    <p data-fr="Organisation des informations importantes sur Notion pour préparer les épreuves du BTS." data-en="Organizing important information on Notion to prepare for BTS exams.">Organisation et archivage des points clés sur Notion.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- PAGE 7: PROJET PROFESSIONNEL -->
+    <section id="projet-pro" class="page-section bg-alt">
+        <div class="section-header">
+            <h2 data-fr="Projet Professionnel" data-en="Career Plan" data-jp="キャリアプラン">Projet Professionnel</h2>
+            <p class="section-subtitle" data-fr="Vision et ambitions" data-en="Vision and ambitions" data-jp="ビジョンと野望">Vision et ambitions</p>
+        </div>
+
+        <div class="career-timeline">
+            <div class="career-phase" data-aos="fade-right">
+                <div class="phase-header">
+                    <div class="phase-icon">📅</div>
+                    <h3 data-fr="Court Terme (1-2 ans)" data-en="Short Term (1-2 years)" data-jp="短期（1〜2年）">Court Terme (1-2 ans)</h3>
+                </div>
+                <div class="phase-content">
+                    <div class="phase-goals">
+                        <h4 data-fr="Objectifs" data-en="Objectives" data-jp="目標">Objectifs :</h4>
+                        <ul>
+                            <li data-fr="Obtenir mon diplôme BTS SIO SLAM" data-en="Obtain my BTS SIO SLAM diploma" data-jp="BTS SIO SLAM卒業証書を取得">Obtenir mon diplôme BTS SIO SLAM</li>
+                            <li data-fr="Monter en compétence dans mon entreprise actuelle (Capgemini Engineering)" data-en="Develop skills in my current company (Capgemini Engineering)" data-jp="現在の会社でスキルを向上させる（Capgemini Engineering）">Monter en compétence dans mon entreprise actuelle (Capgemini Engineering)</li>
+                            <li data-fr="Maîtriser les technologies .NET et bases de données" data-en="Master .NET technologies and databases" data-jp=".NET技術とデータベースをマスター">Maîtriser les technologies .NET et bases de données</li>
+                            <li data-fr="Approfondir mes connaissances en développement d'applications" data-en="Deepen my knowledge in application development" data-jp="アプリケーション開発の知識を深める">Approfondir mes connaissances en développement d'applications</li>
+                        </ul>
+                    </div>
+                    <div class="phase-actions">
+                        <h4 data-fr="Actions Concrètes" data-en="Concrete Actions" data-jp="具体的なアクション">Actions Concrètes :</h4>
+                        <ul>
+                            <li data-fr="Formation continue sur les frameworks modernes" data-en="Continuous training on modern frameworks" data-jp="最新フレームワークでの継続的なトレーニング">Formation continue sur les frameworks modernes</li>
+                            <li data-fr="Participation active aux projets d'entreprise" data-en="Active participation in company projects" data-jp="会社のプロジェクトへの積極的な参加">Participation active aux projets d'entreprise</li>
+                            <li data-fr="Développement de projets personnels sur GitHub" data-en="Development of personal projects on GitHub" data-jp="GitHubでの個人プロジェクトの開発">Développement de projets personnels sur GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="career-phase" data-aos="fade-left">
+                <div class="phase-header">
+                    <div class="phase-icon">🎓</div>
+                    <h3 data-fr="Moyen Terme (3-5 ans)" data-en="Medium Term (3-5 years)" data-jp="中期（3〜5年）">Moyen Terme (3-5 ans)</h3>
+                </div>
+                <div class="phase-content">
+                    <div class="phase-goals">
+                        <h4 data-fr="Objectifs" data-en="Objectives" data-jp="目標">Objectifs :</h4>
+                        <ul>
+                            <li data-fr="Obtenir un Master en Développement Logiciel" data-en="Obtain a Master's in Software Development" data-jp="ソフトウェア開発の修士号を取得">Obtenir un Master en Développement Logiciel</li>
+                            <li data-fr="Devenir développeur senior" data-en="Become a senior developer" data-jp="シニア開発者になる">Devenir développeur senior</li>
+                            <li data-fr="Expertise dans les architectures logicielles complexes" data-en="Expertise in complex software architectures" data-jp="複雑なソフトウェアアーキテクチャの専門知識">Expertise dans les architectures logicielles complexes</li>
+                            <li data-fr="Participer à des projets d'envergure internationale" data-en="Participate in international projects" data-jp="国際的なプロジェクトに参加">Participer à des projets d'envergure internationale</li>
+                        </ul>
+                    </div>
+                    <div class="phase-actions">
+                        <h4 data-fr="Actions Concrètes" data-en="Concrete Actions" data-jp="具体的なアクション">Actions Concrètes :</h4>
+                        <ul>
+                            <li data-fr="Poursuivre mes études en alternance" data-en="Continue my studies through work-study" data-jp="産学連携で学業を続ける">Poursuivre mes études en alternance</li>
+                            <li data-fr="Développer une expertise technique pointue" data-en="Develop sharp technical expertise" data-jp="鋭い技術的専門知識を開発">Développer une expertise technique pointue</li>
+                            <li data-fr="Contribuer à des projets open source majeurs" data-en="Contribute to major open source projects" data-jp="主要なオープンソースプロジェクトに貢献">Contribuer à des projets open source majeurs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="career-phase long-term" data-aos="fade-up">
+                <div class="phase-header">
+                    <div class="phase-icon">🚀</div>
+                    <h3 data-fr="Long Terme (5-10 ans)" data-en="Long Term (5-10 years)" data-jp="長期（5〜10年）">Long Terme (5-10 ans)</h3>
+                </div>
+                <div class="phase-content">
+                    <div class="phase-goals">
+                        <h4 data-fr="Objectifs" data-en="Objectives" data-jp="目標">Objectifs :</h4>
+                        <ul>
+                            <li data-fr="Continuer à monter en compétence dans ma branche" data-en="Continue to develop skills in my field" data-jp="私の分野でスキルを向上させ続ける">Continuer à monter en compétence dans ma branche</li>
+                            <li data-fr="Devenir expert technique reconnu" data-en="Become a recognized technical expert" data-jp="認められた技術専門家になる">Devenir expert technique reconnu</li>
+                            <li data-fr="Possibilité d'évolution vers l'architecture logicielle ou le lead technique" data-en="Possibility of evolution towards software architecture or technical lead" data-jp="ソフトウェアアーキテクチャまたはテクニカルリードへの進化の可能性">Possibilité d'évolution vers l'architecture logicielle ou le lead technique</li>
+                            <li data-fr="Mentorat et transmission de connaissances" data-en="Mentoring and knowledge transfer" data-jp="メンタリングと知識の伝達">Mentorat et transmission de connaissances</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 8: SOFT SKILLS -->
+    <section id="soft-skills" class="page-section">
+        <div class="section-header">
+            <h2 data-fr="Soft Skills" data-en="Soft Skills" data-jp="ソフトスキル">Soft Skills</h2>
+            <p class="section-subtitle" data-fr="Compétences Transversales" data-en="Transversal Skills" data-jp="横断的スキル">Compétences Transversales</p>
+        </div>
+
+        <div class="soft-skills-container">
+            <div class="skill-tag" data-fr="Travail d'équipe" data-en="Teamwork" data-jp="チームワーク">Travail d'équipe</div>
+            <div class="skill-tag" data-fr="Autonomie" data-en="Autonomy" data-jp="自律性">Autonomie</div>
+            <div class="skill-tag" data-fr="Curiosité" data-en="Curiosity" data-jp="好奇心">Curiosité</div>
+            <div class="skill-tag" data-fr="Rigueur" data-en="Rigor" data-jp="厳格さ">Rigueur</div>
+            <div class="skill-tag" data-fr="Créativité" data-en="Creativity" data-jp="創造性">Créativité</div>
+            <div class="skill-tag" data-fr="Adaptabilité" data-en="Adaptability" data-jp="適応性">Adaptabilité</div>
+        </div>
+
+        <div style="max-width: 900px; margin: 60px auto 0; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 5px 30px rgba(59,42,26,0.1);">
+            <h3 style="color: #D4AF37; font-size: 1.5rem; margin-bottom: 20px; text-align: center;">
+                <span data-fr="Développées grâce à mes expériences" data-en="Developed through my experiences" data-jp="私の経験を通じて開発">Développées grâce à mes expériences</span>
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 30px;">
+                <div style="text-align: center; padding: 20px;">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">🚒</div>
+                    <h4 style="color: #D4AF37; margin-bottom: 10px;" data-fr="Engagement Militaire" data-en="Military Service" data-jp="兵役">Engagement Militaire</h4>
+                    <p style="color: #3B2A1A; font-size: 0.95rem;">Rigueur, discipline, travail d'équipe sous pression</p>
+                </div>
+                <div style="text-align: center; padding: 20px;">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">🌏</div>
+                    <h4 style="color: #D4AF37; margin-bottom: 10px;" data-fr="Australie" data-en="Australia" data-jp="オーストラリア">Australie</h4>
+                    <p style="color: #3B2A1A; font-size: 0.95rem;">Autonomie, adaptabilité, ouverture culturelle</p>
+                </div>
+                <div style="text-align: center; padding: 20px;">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">💼</div>
+                    <h4 style="color: #D4AF37; margin-bottom: 10px;" data-fr="Alternance" data-en="Apprenticeship" data-jp="インターンシップ">Alternance</h4>
+                    <p style="color: #3B2A1A; font-size: 0.95rem;">Curiosité technique, créativité, professionnalisme</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
