@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     // ================================
     // ÉLÉMENTS DU DOM
@@ -402,3 +403,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+

@@ -367,6 +367,8 @@ html {
     transform: rotate(-45deg);
 }
 
+
+
 /* ================================
    PAGE 2: PARCOURS / TIMELINE
    ================================ */
@@ -480,6 +482,22 @@ html {
     color: var(--brown);
     margin-bottom: 15px;
     font-size: 1.1rem;
+}
+
+.timeline-location {
+    font-size: 0.9rem;
+    color: var(--brown);
+    opacity: 0.75;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+    font-style: italic; 
+}
+
+.timeline-location::before {
+    content: ''; 
 }
 
 .timeline-list {
