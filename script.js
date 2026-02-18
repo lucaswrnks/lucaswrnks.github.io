@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 projectCards.forEach(card => {
                     const cardCategory = card.getAttribute('data-category');
                     
-                    if (filterValue === 'all' || cardCategory === filterValue) {
+                    if (filterValue === 'all' || cardCategory.split(' ').includes(filterValue)) {
                         card.style.display = 'block';
                         // Animation d'apparition
                         setTimeout(() => {

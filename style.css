@@ -1152,6 +1152,28 @@ html {
     line-height: 1.6;
 }
 
+.btn-read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0 15px 0;
+    padding: 8px 16px;
+    background-color: transparent;
+    border: 1px solid var(--brown); 
+    color: var(--brown);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-read-more:hover {
+    background-color: var(--brown);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
 /* ================================
    PAGE 7: PROJET PROFESSIONNEL
    ================================ */
@@ -1498,6 +1520,49 @@ html {
         box-shadow: 0 0 0 6px var(--cream);
     }
 }
+
+
+
+        .project-referentiel {
+            margin-top: 18px;
+            border-top: 1px solid var(--light-gold);
+            padding-top: 14px;
+        }
+        .project-referentiel h4 {
+            color: var(--gold);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .ref-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .ref-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 11px;
+            background: linear-gradient(135deg, rgba(212,175,55,0.12), rgba(212,175,55,0.06));
+            border: 1px solid rgba(212,175,55,0.35);
+            border-radius: 20px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--brown);
+            white-space: nowrap;
+        }
+        .ref-badge::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--gold);
+            flex-shrink: 0;
+        }
+
 
 /* ================================
    ANIMATIONS
