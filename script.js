@@ -341,6 +341,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     //     typeWriter(heroSubtitle, originalText, 50);
     // }
 
+    
     // ================================
     // INITIALISATION
     // ================================

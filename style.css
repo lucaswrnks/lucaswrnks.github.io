@@ -1168,6 +1168,7 @@ html {
     transition: all 0.3s ease;
 }
 
+
 .btn-read-more:hover {
     background-color: var(--brown);
     color: #fff;
