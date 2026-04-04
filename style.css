@@ -1388,6 +1388,28 @@ html {
     box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
 }
 
+.btn-referentiel {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, var(--accent-gold), var(--accent-brown));
+    
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-referentiel:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.25);
+    opacity: 0.92;
+}
+
 /* ================================
    PAGE 9: EXPÉRIENCE (Bonus)
    ================================ */

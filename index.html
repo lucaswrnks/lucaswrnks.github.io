@@ -1087,6 +1087,24 @@
             <ul>
                 <li data-fr="Développement de templates dynamiques avec EJS et une interface responsive avec Bootstrap 5." data-en="Development of dynamic templates with EJS and a responsive interface with Bootstrap 5." data-jp="EJSによる動的テンプレートの開発とBootstrap 5によるレスポンシブなインターフェース。">Interface responsive développée avec EJS et Bootstrap 5.</li>
             </ul>
+            <h4 data-fr="Sécurisation HTTPS" data-en="HTTPS Security" data-jp="HTTPSセキュリティ">Sécurisation HTTPS</h4>
+<ul>
+    <li data-fr="Serveur Node.js configuré en HTTPS avec certificat SSL auto-signé (OpenSSL)."
+        data-en="Node.js server configured in HTTPS with self-signed SSL certificate (OpenSSL)."
+        data-jp="OpenSSLによる自己署名SSL証明書でHTTPS設定されたNode.jsサーバー。">
+        Serveur Node.js configuré en HTTPS avec certificat SSL auto-signé (OpenSSL).
+    </li>
+    <li data-fr="Utilisation d'un fichier .env pour sécuriser les variables sensibles (BDD, JWT, port) — exclu du dépôt Git."
+        data-en="Use of a .env file to secure sensitive variables (DB, JWT, port) — excluded from the Git repository."
+        data-jp="機密変数（DB、JWT、ポート）を保護するための.envファイルの使用 — Gitリポジトリから除外。">
+        Variables sensibles sécurisées via fichier <em>.env</em> (exclut du dépôt GitHub).
+    </li>
+    <li data-fr="Cookies httpOnly pour les tokens JWT — inaccessibles depuis JavaScript côté client."
+        data-en="httpOnly cookies for JWT tokens — inaccessible from client-side JavaScript."
+        data-jp="クライアントサイドJavaScriptからアクセス不可のJWTトークン用httpOnlyクッキー。">
+        Tokens JWT stockés en cookies <em>httpOnly</em> — protection contre les attaques XSS.
+    </li>
+</ul>
         </div>
 
         <div class="project-tech">
@@ -1096,6 +1114,16 @@
             <span class="tech-badge">MySQL</span>
             <span class="tech-badge">JWT</span>
             <span class="tech-badge">EJS</span>
+            <span class="tech-badge">HTTPS / SSL</span>
+            <span class="tech-badge">Bootstrap 5</span>
+        </div>
+
+        <div class="project-links" style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+            <a href="https://github.com/lucaswrnks/Isig-Web"
+               target="_blank"
+               class="btn-project">
+                <i class="fab fa-github"></i> Liens GitHub
+            </a>
         </div>
 
         <div class="project-referentiel">
@@ -1109,7 +1137,239 @@
     </div>
 </div>
 
+<!-- ══════════════════════════════════════════
+     Application Desktop JavaFX - ISIG Paris
+════════════════════════════════════════════ -->
+<div class="project-card" data-category="formation" data-aos="fade-up" data-aos-delay="100">
+    <div class="project-image">
+        <div class="project-overlay">
+            <span class="project-tag"
+                  data-fr="Conception et développement"
+                  data-en="Design and Development"
+                  data-jp="設計と開発">
+                Conception et développement
+            </span>
+        </div>
     </div>
+
+    <div class="project-content">
+        <h3 data-fr="Application Desktop de Visualisation — ISIG Paris (JavaFX)"
+            data-en="Desktop Visualization App — ISIG Paris (JavaFX)"
+            data-jp="デスクトップ可視化アプリ — ISIG Paris (JavaFX)">
+            Application Desktop de Visualisation — ISIG Paris (JavaFX)
+        </h3>
+
+        <div class="project-meta">
+            <span class="meta-item">📅 Mars 2026</span>
+            <span class="meta-item">🎓 BTS SIO Option SLAM</span>
+        </div>
+
+        <p data-fr="Application desktop (Client Lourd) développée en Java 21 / JavaFX permettant la visualisation analytique des données de l'établissement ISIG Paris via un tableau de bord graphique. Elle consomme la même API REST HTTPS que l'application web et fonctionne uniquement en lecture seule — aucune modification des données n'est possible."
+           data-en="Desktop application (Thick Client) developed in Java 21 / JavaFX for analytical visualization of ISIG Paris data through a graphical dashboard. It consumes the same HTTPS REST API as the web application and operates in read-only mode — no data modification is possible."
+           data-jp="Java 21 / JavaFXで開発されたデスクトップアプリケーション（シッククライアント）。グラフィカルダッシュボードを通じてISIG Parisのデータを分析的に可視化。WebアプリケーションのHTTPS REST APIを共有し、読み取り専用モードで動作。">
+            Application desktop (Client Lourd) en Java 21 / JavaFX connectée à la même API REST HTTPS que l'application web — tableau de bord analytique en lecture seule.
+        </p>
+
+        <div class="project-results">
+
+            <!-- Architecture MVC -->
+            <h4 data-fr="Architecture MVC JavaFX"
+                data-en="JavaFX MVC Architecture"
+                data-jp="JavaFX MVCアーキテクチャ">
+                Architecture MVC JavaFX
+            </h4>
+            <ul>
+                <li data-fr="Modèles Java (POJO) : classes Etudiant, Cours, Session… avec getters/setters correspondant aux champs de la base de données."
+                    data-en="Java Models (POJO): Etudiant, Cours, Session… classes with getters/setters matching database fields."
+                    data-jp="Javaモデル（POJO）：データベースフィールドに対応するゲッター/セッターを持つEtudiant、Cours、Sessionなどのクラス。">
+                    <em>Modèles</em> Java (POJO) : Etudiant, Cours, Session… avec getters/setters.
+                </li>
+                <li data-fr="Vues FXML : fichiers XML décrivant l'interface graphique, liés aux contrôleurs via l'annotation @FXML."
+                    data-en="FXML Views: XML files describing the graphical interface, linked to controllers via @FXML annotation."
+                    data-jp="FXMLビュー：@FXMLアノテーションでコントローラーにリンクされた、グラフィカルインターフェースを記述するXMLファイル。">
+                    <em>Vues</em> FXML : interface graphique décrite en XML, liée aux contrôleurs via <em>@FXML</em>.
+                </li>
+                <li data-fr="Contrôleurs Java : chargent les données via ApiService, les affichent dans les composants JavaFX (TableView, Charts)."
+                    data-en="Java Controllers: load data via ApiService, display them in JavaFX components (TableView, Charts)."
+                    data-jp="Javaコントローラー：ApiServiceを通じてデータを読み込み、JavaFXコンポーネント（TableView、Charts）に表示。">
+                    <em>Contrôleurs</em> Java : chargent les données via ApiService et les affichent.
+                </li>
+                <li data-fr="ApiService.java : méthodes getEtudiants(), getSessions()… qui appellent HttpUtil et convertissent le JSON en objets Java via Gson."
+                    data-en="ApiService.java: getEtudiants(), getSessions()… methods that call HttpUtil and convert JSON to Java objects via Gson."
+                    data-jp="ApiService.java：HttpUtilを呼び出し、GsonでJSONをJavaオブジェクトに変換するgetEtudiants()、getSessions()などのメソッド。">
+                    <em>ApiService.java</em> : appelle l'API et convertit le JSON en objets Java avec <em>Gson</em>.
+                </li>
+            </ul>
+
+            <!-- Communication API HTTPS -->
+            <h4 data-fr="Communication API REST en HTTPS"
+                data-en="HTTPS REST API Communication"
+                data-jp="HTTPS REST API通信">
+                Communication API REST en HTTPS
+            </h4>
+            <ul>
+                <li data-fr="Utilisation de java.net.http.HttpClient (Java 21) pour envoyer des requêtes GET vers l'API REST."
+                    data-en="Use of java.net.http.HttpClient (Java 21) to send GET requests to the REST API."
+                    data-jp="REST APIへのGETリクエスト送信にjava.net.http.HttpClient（Java 21）を使用。">
+                    <em>java.net.http.HttpClient</em> (Java 21) pour les requêtes GET vers l'API.
+                </li>
+                <li data-fr="Gestion des certificats SSL auto-signés : implémentation d'un X509ExtendedTrustManager personnalisé pour accepter les connexions HTTPS locales."
+                    data-en="Self-signed SSL certificate management: implementation of a custom X509ExtendedTrustManager to accept local HTTPS connections."
+                    data-jp="自己署名SSL証明書の管理：ローカルHTTPS接続を受け入れるカスタムX509ExtendedTrustManagerの実装。">
+                    Gestion SSL : <em>X509ExtendedTrustManager</em> personnalisé pour les certificats auto-signés.
+                </li>
+                <li data-fr="Token JWT stocké dans ApiConfig et envoyé automatiquement dans le header de chaque requête HTTP."
+                    data-en="JWT token stored in ApiConfig and automatically sent in each HTTP request header."
+                    data-jp="ApiConfigに保存されたJWTトークンが各HTTPリクエストヘッダーに自動送信。">
+                    Token JWT envoyé automatiquement dans chaque requête — authentification partagée avec l'API.
+                </li>
+            </ul>
+
+            <!-- Multithreading -->
+            <h4 data-fr="Multithreading et Interface Réactive"
+                data-en="Multithreading & Reactive UI"
+                data-jp="マルチスレッドとリアクティブUI">
+                Multithreading et Interface Réactive
+            </h4>
+            <ul>
+                <li data-fr="Les appels réseau sont effectués dans un Thread séparé pour ne pas bloquer l'interface graphique."
+                    data-en="Network calls are made in a separate Thread to avoid blocking the graphical interface."
+                    data-jp="ネットワーク呼び出しは、グラフィカルインターフェースをブロックしないよう別のスレッドで行う。">
+                    Appels réseau dans un <em>Thread</em> séparé — l'interface ne se fige jamais.
+                </li>
+                <li data-fr="Mise à jour de l'interface uniquement via Platform.runLater() — obligation JavaFX pour modifier l'UI depuis un thread secondaire."
+                    data-en="UI updates only via Platform.runLater() — JavaFX requirement to modify UI from a secondary thread."
+                    data-jp="セカンダリスレッドからUIを変更するJavaFXの要件 — Platform.runLater()経由でのみUIを更新。">
+                    Mise à jour UI via <em>Platform.runLater()</em> — règle obligatoire du thread JavaFX.
+                </li>
+            </ul>
+
+            <!-- Tableau de bord -->
+            <h4 data-fr="Tableau de Bord — 6 Graphiques JavaFX"
+                data-en="Dashboard — 6 JavaFX Charts"
+                data-jp="ダッシュボード — 6つのJavaFXグラフ">
+                Tableau de Bord — 6 Graphiques JavaFX
+            </h4>
+            <ul>
+                <li data-fr="BarChart : taux de remplissage des sessions (vert = ok, orange = 75%+, rouge = complet)."
+                    data-en="BarChart: session fill rate (green = ok, orange = 75%+, red = full)."
+                    data-jp="BarChart：セッション充填率（緑 = OK、オレンジ = 75%+、赤 = 満員）。">
+                    <em>BarChart</em> : taux de remplissage des sessions — couleurs vert / orange / rouge.
+                </li>
+                <li data-fr="StackedBarChart : distribution des notes par cours — rouge (sous 10), orange (10-13), vert (14+)."
+                    data-en="StackedBarChart: grade distribution per course — red (below 10), orange (10-13), green (14+)."
+                    data-jp="StackedBarChart：コース別成績分布 — 赤（10未満）、オレンジ（10-13）、緑（14+）。">
+                    <em>StackedBarChart</em> : distribution des notes empilées par cours.
+                </li>
+                <li data-fr="BarChart : moyenne des notes par cours avec seuils de couleur."
+                    data-en="BarChart: average grades per course with color thresholds."
+                    data-jp="BarChart：色のしきい値を持つコース別平均成績。">
+                    <em>BarChart</em> : moyenne des notes par cours.
+                </li>
+                <li data-fr="BubbleChart : capacité max (axe X) vs inscrits (axe Y) — taille de la bulle = taux de remplissage."
+                    data-en="BubbleChart: max capacity (X axis) vs enrolled (Y axis) — bubble size = fill rate."
+                    data-jp="BubbleChart：最大定員（X軸）対登録数（Y軸） — バブルサイズ = 充填率。">
+                    <em>BubbleChart</em> : capacité vs inscrits par session.
+                </li>
+                <li data-fr="2 PieCharts : répartition des étudiants par type de formation (BTS/Bachelor/Licence/Master) et par formation détaillée."
+                    data-en="2 PieCharts: student distribution by training type (BTS/Bachelor/Licence/Master) and by detailed training."
+                    data-jp="2つのPieChart：研修タイプ（BTS/Bachelor/Licence/Master）別および詳細研修別の学生分布。">
+                    2 <em>PieCharts</em> : répartition étudiants par type et par formation.
+                </li>
+            </ul>
+
+            <!-- Lecture seule -->
+            <h4 data-fr="Choix de Conception : Lecture Seule"
+                data-en="Design Choice: Read-Only"
+                data-jp="設計上の選択：読み取り専用">
+                Choix de Conception : Lecture Seule
+            </h4>
+            <ul>
+                <li data-fr="L'application desktop est un outil de visualisation et d'analyse — aucun bouton de création, modification ou suppression."
+                    data-en="The desktop application is a visualization and analysis tool — no create, edit or delete buttons."
+                    data-jp="デスクトップアプリケーションは可視化と分析のツール — 作成、編集、削除ボタンなし。">
+                    Visualisation pure : aucun CRUD — séparation des responsabilités avec l'app web.
+                </li>
+                <li data-fr="Tous les rôles (admin, enseignant, étudiant) voient les mêmes données — la gestion des droits reste côté API."
+                    data-en="All roles (admin, teacher, student) see the same data — access rights management remains on the API side."
+                    data-jp="すべてのロール（管理者、教員、学生）が同じデータを表示 — アクセス権管理はAPI側。">
+                    Tous les rôles accèdent aux mêmes données — droits gérés côté API uniquement.
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="project-tech">
+            <span class="tech-badge">Java 21</span>
+            <span class="tech-badge">JavaFX</span>
+            <span class="tech-badge">FXML</span>
+            <span class="tech-badge">Gson</span>
+            <span class="tech-badge">API REST</span>
+            <span class="tech-badge">HTTPS / SSL</span>
+            <span class="tech-badge">MVC</span>
+            <span class="tech-badge">Multithreading</span>
+            <span class="tech-badge">Eclipse IDE</span>
+        </div>
+
+        <div class="project-links" style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+            <a href="https://github.com/lucaswrnks/isig-desktop"
+               target="_blank"
+               class="btn-project">
+                <i class="fab fa-github"></i> Liens GitHub
+            </a>
+        </div>
+
+        <div class="project-referentiel">
+            <h4 data-fr="Compétences du référentiel"
+                data-en="Reference Skills"
+                data-jp="参照スキル">
+                Compétences du référentiel
+            </h4>
+            <div class="ref-badges">
+                <span class="ref-badge"
+                      data-fr="Concevoir et développer une solution applicative"
+                      data-en="Design and develop an application solution"
+                      data-jp="アプリケーションソリューションの設計と開発">
+                    Concevoir et développer une solution applicative
+                </span>
+                <span class="ref-badge"
+                      data-fr="Gérer les données"
+                      data-en="Manage data"
+                      data-jp="データ管理">
+                    Gérer les données
+                </span>
+                <span class="ref-badge"
+                      data-fr="Travailler en mode projet"
+                      data-en="Work in project mode"
+                      data-jp="プロジェクトモードでの作業">
+                    Travailler en mode projet
+                </span>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+<!-- ══════════════════════════════════════════
+     BOUTON RÉFÉRENTIEL PDF
+══════════════════════════════════════════ -->
+<div class="referentiel-cta" data-aos="fade-up" style="text-align:center; margin-top: 60px; padding: 40px 20px;">
+    <p class="section-subtitle" 
+       data-fr="Consultez l'ensemble de mes compétences BTS SIO validées"
+       data-en="View all my validated BTS SIO competencies"
+       data-jp="検証済みのBTS SIOスキルをすべて確認する"
+       style="margin-bottom: 20px;">
+        Consultez l'ensemble de mes compétences BTS SIO validées
+    </p>
+    <a href="tableau_de_synthese.pdf" 
+       target="_blank" 
+       class="btn-referentiel"
+       data-fr="📄 Voir mon référentiel de compétences"
+       data-en="📄 View my competency framework"
+       data-jp="📄 スキル参照書を見る">
+        📄 Voir mon référentiel de compétences
+    </a>
+</div>
 </section>
  
 <!-- PAGE 6: VEILLE TEHCNOLOGIQUE -->
