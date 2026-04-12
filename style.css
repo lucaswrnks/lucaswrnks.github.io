@@ -525,15 +525,15 @@ html {
    ================================ */
 .activities-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .activity-card {
     background: var(--white);
-    padding: 35px;
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 0 5px 25px var(--shadow);
     transition: all 0.3s ease;
@@ -546,8 +546,8 @@ html {
 }
 
 .activity-icon {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 .activity-card h3 {
@@ -568,6 +568,22 @@ html {
     color: var(--brown);
     opacity: 0.8;
     line-height: 1.7;
+}
+
+.activity-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.activity-tags span {
+    background: var(--light-gold);
+    color: var(--brown);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
 }
 
 /* ================================
@@ -1393,8 +1409,9 @@ html {
     align-items: center;
     gap: 10px;
     padding: 14px 32px;
-    background: linear-gradient(135deg, var(--accent-gold), var(--accent-brown));
     
+    background: var(--gold);
+    color: var(--white);
     font-weight: 600;
     font-size: 1rem;
     border-radius: 8px;
