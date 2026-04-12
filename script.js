@@ -1,3 +1,28 @@
+// ================================
+// MODALE BTS SIO
+// ================================
+const btnBts = document.getElementById('btn-bts-info');
+const modalBts = document.getElementById('modal-bts');
+const btnCloseBts = document.getElementById('btn-close-modal');
+
+if (btnBts && modalBts) {
+    btnBts.addEventListener('click', () => {
+        modalBts.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    });
+
+    btnCloseBts.addEventListener('click', () => {
+        modalBts.style.display = 'none';
+        document.body.style.overflow = '';
+    });
+
+    modalBts.addEventListener('click', (e) => {
+        if (e.target === modalBts) {
+            modalBts.style.display = 'none';
+            document.body.style.overflow = '';
+        }
+    });
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     // ================================

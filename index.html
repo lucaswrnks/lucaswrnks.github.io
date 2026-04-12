@@ -51,13 +51,13 @@
    data-jp="アプリケーション開発者 | 次期情報工学 B3 学生">
    Développeur d'Applications | Futur Étudiant B3 Informatique
 </p>
-<a href="#parcours" class="hero-badge" data-aos="fade-up" data-aos-delay="200" style="text-decoration: none;">
+<button class="hero-badge" id="btn-bts-info" type="button">
     <span data-fr="🎓 BTS SIO - Option SLAM" 
           data-en="🎓 Associate Degree in Software Development" 
           data-jp="🎓 情報システム専門学位 (ソフトウェア開発)">
           🎓 BTS SIO - Option SLAM
     </span>
-</a>
+</button>
         
         <div class="contact-links" data-aos="fade-up" data-aos-delay="300">
             <a href="mailto:lucaswrnks@gmail.com" class="contact-btn" title="Email">
@@ -1558,6 +1558,64 @@
     </div>
 </div>
     </section>
+
+    <!-- MODALE BTS SIO -->
+<div id="modal-bts" class="modal-overlay" style="display:none;">
+    <div class="modal-box">
+        <button class="modal-close" id="btn-close-modal">✕</button>
+
+        <h2 data-fr="🎓 BTS SIO - C'est quoi ?"
+            data-en="🎓 BTS SIO - What is it?"
+            data-jp="🎓 BTS SIO - それは何ですか？">
+            🎓 BTS SIO - C'est quoi ?
+        </h2>
+
+        <p data-fr="Le BTS SIO (Services Informatiques aux Organisations) est un diplôme de niveau Bac+2 qui forme aux métiers de l'informatique. Il se découpe en deux options aux profils très différents :"
+           data-en="The BTS SIO (IT Services for Organizations) is a 2-year degree that trains students in IT professions. It is divided into two very different options:"
+           data-jp="BTS SIO（組織向けITサービス）は、IT職業に向けた2年制の学位です。2つの異なるオプションに分かれています：">
+            Le BTS SIO (Services Informatiques aux Organisations) est un diplôme de niveau Bac+2 qui forme aux métiers de l'informatique. Il se découpe en deux options aux profils très différents :
+        </p>
+
+        <div class="modal-options">
+            <div class="modal-option option-sisr">
+                <div class="option-icon">🌐</div>
+                <h3>Option SISR</h3>
+                <p class="option-full" data-fr="Solutions d'Infrastructure, Systèmes et Réseaux"
+                   data-en="Infrastructure, Systems and Network Solutions"
+                   data-jp="インフラ、システム、ネットワークソリューション">
+                   Solutions d'Infrastructure, Systèmes et Réseaux
+                </p>
+                <p data-fr="Orientée administration système et réseau : configuration de serveurs, gestion des équipements réseau, sécurité des infrastructures, support technique."
+                   data-en="Focused on system and network administration: server configuration, network equipment management, infrastructure security, technical support."
+                   data-jp="システムとネットワーク管理に焦点：サーバー設定、ネットワーク機器管理、インフラセキュリティ、技術サポート。">
+                    Orientée administration système et réseau : configuration de serveurs, gestion des équipements réseau, sécurité des infrastructures, support technique.
+                </p>
+            </div>
+
+            <div class="modal-option option-slam chosen">
+                <div class="option-icon">💻</div>
+                <h3>Option SLAM <span class="chosen-badge" data-fr="Mon choix" data-en="My choice" data-jp="私の選択">Mon choix ✓</span></h3>
+                <p class="option-full" data-fr="Solutions Logicielles et Applications Métiers"
+                   data-en="Software Solutions and Business Applications"
+                   data-jp="ソフトウェアソリューションとビジネスアプリケーション">
+                   Solutions Logicielles et Applications Métiers
+                </p>
+                <p data-fr="Orientée développement logiciel : conception et développement d'applications web, mobile et desktop, gestion de bases de données, architecture logicielle."
+                   data-en="Focused on software development: design and development of web, mobile and desktop applications, database management, software architecture."
+                   data-jp="ソフトウェア開発に焦点：Web、モバイル、デスクトップアプリの設計と開発、データベース管理、ソフトウェアアーキテクチャ。">
+                    Orientée développement logiciel : conception et développement d'applications web, mobile et desktop, gestion de bases de données, architecture logicielle.
+                </p>
+            </div>
+        </div>
+
+        <p class="modal-conclusion" 
+           data-fr="J'ai choisi l'option SLAM car ma passion est le développement d'applications. Cette formation m'a permis d'acquérir des compétences solides en programmation tout en travaillant sur des projets concrets en alternance chez Capgemini."
+           data-en="I chose the SLAM option because my passion is application development. This training allowed me to acquire solid programming skills while working on concrete projects as part of my work-study at Capgemini."
+           data-jp="アプリケーション開発への情熱からSLAMオプションを選択しました。この研修により、Capgeminiでの実務研修を通じて具体的なプロジェクトに取り組みながら、確固たるプログラミングスキルを習得できました。">
+            J'ai choisi l'option SLAM car ma passion est le développement d'applications. Cette formation m'a permis d'acquérir des compétences solides en programmation tout en travaillant sur des projets concrets en alternance chez Capgemini.
+        </p>
+    </div>
+</div>
 
 </body>
 </html>
